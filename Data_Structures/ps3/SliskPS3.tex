@@ -1,0 +1,72 @@
+%/********************************
+%Name: Solomon Lisk
+%Username: ua110
+%Problem Set: PS5
+%Due Date: October 15, 2018
+%********************************/
+
+\documentclass{article}
+\usepackage[english] {babel}
+\usepackage [utf8] {inputenc}
+\usepackage{algorithm}
+\usepackage [noend] {algpseudocode}
+\usepackage {amsmath,amsfonts,amsthm}
+\usepackage[letterpaper, margin=1.25in]{geometry}
+\usepackage{listings}
+
+\title{Solomon Lisk's Problem Set 3}
+\author{Solomon Lisk}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item $\mathcal{O}(n)$
+\item $\mathcal{O}(n^2)$
+\item $\mathcal{O}(n^3)$
+\item $\mathcal{O}(n^3)$
+\item $\mathcal{O}(nlgn)$
+\item $\exists k_1>0\exists n_0 \forall n > n_0g(n) \times k \leq f(n) $
+\item $ \sum_{k=1}^{n} k=\frac{n(n+1)}{2}$
+\item \begin{lstlisting}
+for(int i=0;i<n;i++){
+  for(int k=0;k<n;k++){
+	for(int j=0;j<n;j*=2){
+	  System.out.println("Lisk");
+    }
+  }
+}
+\end{lstlisting}
+\item $\mathcal{O}(n)$ 
+\begin {lstlisting}
+char[] alpha = {'A','B','C',...,'Z'}; 
+int [] count = {0,0,0,...,0}; //Count of Letter, Position corresponds to letter
+String getSplit;
+String [] splitArray;
+
+splitArray = getSplit.split("");
+  while(splitArray.hasNext){
+    add to counter per corresponding letters in the string
+  }
+\end{lstlisting}
+\item $\mathcal{O}(lgn)$
+\begin{lstlisting}
+x=number searching for
+low;
+mid;
+high
+for(int i=0;i<n;i++){
+  if(A[i] ==x){
+   return x; 
+  }
+  else if(A[i]> mid){
+   low=mid;
+  }
+  else if(A[i]<mid){
+   mid=high;
+  }
+  recurse through
+}
+\end{lstlisting}
+\end{enumerate}
+
+\end{document}
